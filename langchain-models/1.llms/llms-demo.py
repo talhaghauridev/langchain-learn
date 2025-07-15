@@ -6,6 +6,6 @@ load_dotenv()
 
 llm = GoogleGenerativeAI(model="gemini-2.0-flash")
 
-result = llm.invoke("What is Python Language in short way tell")
+result = llm.invoke("What is Python in simple words")
 
 print(result)
