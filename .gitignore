@@ -17,6 +17,11 @@ env/
 .vscode/
 
 
+# Vector databases and local data
+chroma_db/
+*.db
+*.sqlite
+*.sqlite3
 
 
 .ipynb_checkpoints/

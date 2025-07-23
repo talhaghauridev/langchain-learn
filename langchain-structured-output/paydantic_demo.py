@@ -1,11 +1,18 @@
 from pydantic import BaseModel, Field, EmailStr
 from typing import Optional
 
+
 class Student(BaseModel):
     name: str = Field(default="talha")
     age: Optional[int] = None
     email: EmailStr
-    cgpa: float = Field(gt=0, lt=4.0, default=3.5, description='A decimal value representing the cgpa of the student')
+    cgpa: float = Field(
+        gt=0,
+        lt=4.0,
+        default=3.5,
+        description="A decimal value representing the cgpa of the student",
+    )
+
 
 new_student = {"name": "talha", "age": 10, "email": "talha@gmail.com", "cgpa": 2}
 
